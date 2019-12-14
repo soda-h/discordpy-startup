@@ -17,5 +17,9 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
+ @bot.command()
+async def play(ctx):
+    await ctx.send('データベースに接続できません')
+
 
 bot.run(token)
